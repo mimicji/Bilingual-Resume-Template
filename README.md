@@ -18,7 +18,7 @@
 ```
 %\usepackage[English]{languageSelection} % 导出英文版
 ```
-- 导出英文简历时反之，确保第12行已被注释
+- 导出英文简历时反之，确保第11行已被注释
 ```
 %\usepackage[Chinese]{languageSelection} % 导出中文版
 ```
