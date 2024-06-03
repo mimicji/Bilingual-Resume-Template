@@ -1,0 +1,15 @@
+% \NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{languageSelection}[]
+
+\DeclareOption{English}{
+    \newcommand{\EN}[1]{#1}
+    \newcommand{\CN}[1]{}
+}
+\DeclareOption{Chinese}{
+    \newcommand{\EN}[1]{}
+    \newcommand{\CN}[1]{#1}
+}
+\DeclareOption*{
+    \PackageWarning{languageSelection}{Unknown ‘\CurrentOption’}
+}
+\ProcessOptions\relax

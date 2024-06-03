@@ -1,0 +1,260 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Auther : Kaihang JI
+% Github Repo: 
+
+% 使用方法:
+%   撰写简历时：在\CN{}内填写中文内容，后其紧跟的\EN{}内填写英文内容
+%   导出时: 选择[Chinese]为中文版，选择[English]为英文版
+\usepackage[Chinese]{languageSelection} % 导出中文版
+% \usepackage[English]{languageSelection} % 导出英文版
+
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{fontawesome5}
+\usepackage{zh_CN-Adobefonts_external}
+
+
+
+% 你的双语姓名
+\name{张三}{Joe Doe}
+
+\newcommand*{\customcventry}[7][.13em]{
+\begin{tabular}{@{}l}
+{\bfseries #4} \
+{\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+{\bfseries #5} \
+{\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\
+\begin{minipage}{\maincolumnwidth}%
+\small#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}}
+\begin{document}
+\makecvtitle
+\vspace*{-10mm}
+
+% 个人title
+\begin{center}
+\vspace*{-5mm}
+\CN{
+    \textbf{商业分析师}
+}
+\EN{
+    \textbf{Digital Marketer and Business Analyser}
+}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{ c c c }
+\faMobile\enspace +86 13812345678 & \enspace
+\faWeixin\enspace {WeChatID} & \enspace
+\faHome\enspace 
+\CN{北京，中国} \EN{Beijing, CN} \\
+\faEnvelope \enspace
+\color{blue} 
+\href{mailto:something@gmail.com}
+{something@gmail.com} & \enspace
+\faGithub\enspace \color{blue} \href{https://github.com/????}
+{github.com/something} & \enspace \faLink
+\enspace \color{blue} 
+\href{https://personal.website.com/????}
+{personal.website.com}
+\end{tabular}
+\end{center}
+
+% 以上项目如需增减，则其它可选图标为：
+% \faWhatsapp         % Whatsapp
+% \faTwitter          % Twitter
+% \faLinkedin         % Linkedin
+% \faLine             % Line
+% \faFacebookSquare   % Facebook
+% \faInstagram        % Instagram
+% \faZhihu            % 知乎
+% 更多图标见: https://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
+
+
+
+% 个人简介
+\CN{
+    \section{个人简介}
+    {创新型数字营销经理，拥有5年以上在线营销活动管理经验，擅长带领跨职能团队。精通开发整合营销策略，推动品牌知名度、参与度和转化率。经常超越绩效目标，具备高级分析和解决问题的能力。熟练运用尖端数字工具和平台实现营销目标。
+    }
+}
+\EN{
+    \section{Profile}
+    {Innovative Digital Marketing Manager with 5+ years of experience managing online marketing campaigns and leading cross-functional teams. Skilled in developing integrated marketing strategies that drive brand awareness, engagement, and conversions. Regularly exceed performance targets and possess advanced analytical and problem solving skills. Adept at leveraging cutting-edge digital tools and platforms to achieve marketing objectives.
+    }
+}
+
+
+% 专业领域
+\CN{
+    \section{专业领域}
+    {内容营销 - WordPress - 内容策略 - 搜索引擎排名 - 数据分析 - 使用高级图表进行可视化 - 社交媒体 - 电子邮件营销 - 用户体验 - 数字策略 - 活动管理 - 领先生成}
+}
+\EN{
+    \section{Areas of Expertise}
+    {Content Marketing - WordPress - Content Strategy - Search Engine Ranking - Data Analysis - Visualizing with Advanced Charts - Social Media - Email Marketing - User Experience - Digital Strategy - Campaign Management - Lead Generation}
+}
+
+% 工作经历
+\CN{ \section{工作经历} }
+\EN{\section{Professional Experience} }
+
+\CN{
+\customcventry{06/2023 ‐ 至今}{{\color{blue}\href{https://google.com/}{(Stellar Systems)}}}{数字营销策略师,}{北京，中国}{}{
+    {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+    \item 为邮件、社交媒体、SEO/SEM和展示广告技术跨平台活动制定战略计划。
+    \item 开发并实施数字营销策略，2023年创造收入超过\$850,000。
+    \item 监督执行SEO、SEM、电子邮件、社交媒体和展示广告活动，实现了每次获取成本降低12\%。
+    \end{itemize}}}
+}
+\EN{
+    \customcventry{06/2023 ‐ present}{{\color{blue}\href{https://google.com/}{(Stellar Systems)}}}{Digital Marketing Strategist,}{Beijing, CN}{}{
+    {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+    \item Developed strategic plans for campaigns across email, social media, SEO/SEM, and display advertising techniques.
+    \item Developed and implemented digital marketing strategies that generated over \$850,000 in revenue in 2023
+    \item Oversee the execution of SEO, SEM, email, social media, and display advertising campaigns, achieving a 12\% decrease in cost per acquisition
+    \end{itemize}}}
+}
+
+\CN{
+    \customcventry{01/2023 ‐ 05/2023}{{\color{blue}\href{https://www.google.com/}{(Synapse Solutions)}}}{数字账户经理,}{北京，中国}{}{
+    {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+    \item 实施电子商务业务的重新定向活动等促销活动。
+    \item 通过谷歌Adwords监控PPC广告活动的表现。
+    \item 管理和优化PPC广告活动，使点击率提高了5％。
+    \end{itemize}}}
+}
+\EN{
+    \customcventry{01/2023 ‐ 05/2023}{{\color{blue}\href{https://www.google.com/}{(Synapse Solutions)}}}{Digital Account Manager,}{Beijing, CN}{}{
+    {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+    \item Implemented promotional activities such as re-targeting campaigns for e-commerce businesses.
+    \item Monitored the performance of PPC campaigns through Google Adwords. 
+    \item Managed and optimized PPC campaigns, resulting in a 5\% increase in click-through rates
+    \end{itemize}}}
+}
+
+% 在线课程&证书
+\CN{\section{在线课程\&证书}}
+\EN{\section{Online Courses \& Certifications}}
+{\begin{itemize}[label=\textbullet]
+\item 
+\CN{
+数字营销简介（2023年1月）
+}
+\EN{
+Introduction to Digital Marketing (Jan. 2023) 
+}
+- \underline{\color{blue}\href{https://google.com/}{SEMRUSH}}
+
+\item 
+\CN{
+LinkedIn数字营销职业必备（2022年8月）
+}
+\EN{
+Career Essentials in Digital Marketing by LinkedIn (Aug. 2022)
+}
+- \underline{\color{blue}\href{https://google.com/}{LinkedIn}}
+
+\end{itemize}} 
+
+
+% 教育经历
+\CN{\section{教育经历}}
+\EN{\section{Education}}
+
+\CN{
+\customcventry{09/2022 - 06/2023}
+{{拉斯维加斯大学}}
+{计算机科学硕士}{拉斯维加斯, 美国}{}{}
+{\begin{itemize}[label=\textbullet]
+\item {相关课程：} 数字营销，时间序列分析与预测
+\end{itemize}}
+}
+\EN{
+\customcventry{09/2022 - 06/2023}
+{{University of Las Vegas}}
+{MSc Computer Science}{Las Vegas, USA}{}{}
+{\begin{itemize}[label=\textbullet]
+\item {Relevant Courses: } Digital Marketing, Time Series Analysis \& Forecasting
+\end{itemize}}
+}
+
+
+\CN{
+\customcventry{09/2018 - 06/2022}
+{{拉斯维加斯大学}}
+{计算机科学理学士}{拉斯维加斯, 美国}{}{}
+{\begin{itemize}[label=\textbullet]
+\item {相关课程：} 软件与硬件，数据可视化，商业智能。
+\end{itemize}}
+}
+\EN{
+\customcventry{09/2018 - 06/2022}
+{{University of Las Vegas}}{BSc Computer Science}{Las Vegas, USA}{}{}
+{\begin{itemize}[label=\textbullet]
+\item {Relevant Courses: } Software and Hardware, Data Visualization, Business Intelligence.
+\end{itemize}}
+}
+
+% 专业技能
+\CN{\section{专业技能}}
+\EN{\section{Skills}}
+{\begin{itemize}[label=\textbullet]
+
+\item {
+    \CN{
+        \textbf{数据可视化:} Microsoft Power BI, Excel
+    }
+    \EN{
+        \textbf{Data Visualization:} Microsoft Power BI, Excel
+    }
+}
+
+\item {
+    \CN{
+        \textbf{软件:} Project (MSP), Adobe PhotoShop, Audition, Canva
+    }
+    \EN{
+        \textbf{Software:} Project (MSP), Adobe PhotoShop, Audition, Canva
+    }
+}
+\end{itemize}}
+
+% 语言
+\CN{\section{语言}}
+\EN{\section{Languages}}
+
+\begin{multicols}{2}
+    \begin{itemize}[label=\textbullet]
+    \item 
+        \CN{\textbf{中文} [母语]}
+        \EN{\textbf{Mandarin Chinese} [Native]}
+    \item 
+        \CN{\textbf{英文} [大学英语四级]}
+        \EN{\textbf{English} [CET-4]}
+    \end{itemize}
+\end{multicols}
+\end{document}
+
+% This template is edited from: 
+% -  https://www.overleaf.com/latex/templates/modern-simple-ats-friendly-latex-cv/fqxnznxhvdgp 
+% - https://github.com/xiangrongjingujiu/resume-template
