@@ -1,13 +1,15 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 
 % Auther : Kaihang JI
-% Github Repo: 
+% Github Repo: https://github.com/mimicji/Bilingual-Resume-Template
+% Requirement: XeLaTeX
 
 % 使用方法:
+%   ***必须使用XeLaTeX编译***
 %   撰写简历时：在\CN{}内填写中文内容，后其紧跟的\EN{}内填写英文内容
 %   导出时: 选择[Chinese]为中文版，选择[English]为英文版
 \usepackage[Chinese]{languageSelection} % 导出中文版
-% \usepackage[English]{languageSelection} % 导出英文版
+%\usepackage[English]{languageSelection} % 导出英文版
 
 \moderncvstyle{banking}
 \moderncvcolor{black}
@@ -23,11 +25,6 @@
 \usepackage{amssymb}
 \usepackage{fontawesome5}
 \usepackage{zh_CN-Adobefonts_external}
-
-
-
-% 你的双语姓名
-\name{张三}{Joe Doe}
 
 \newcommand*{\customcventry}[7][.13em]{
 \begin{tabular}{@{}l}
@@ -45,6 +42,14 @@
 \small#7%
 \end{minipage}}\fi%
 \par\addvspace{#1}}
+
+%**************************************************
+%*                 从这里开始                       *
+%**************************************************
+
+% 你的双语姓名
+\name{张三}{Joe Doe}
+
 \begin{document}
 \makecvtitle
 \vspace*{-10mm}
@@ -61,6 +66,7 @@
 \end{center}
 
 
+% 联系方式
 \begin{center}
 \begin{tabular}{ c c c }
 \faMobile\enspace +86 13812345678 & \enspace
@@ -90,7 +96,6 @@
 % 更多图标见: https://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
 
 
-
 % 个人简介
 \CN{
     \section{个人简介}
@@ -113,6 +118,7 @@
     \section{Areas of Expertise}
     {Content Marketing - WordPress - Content Strategy - Search Engine Ranking - Data Analysis - Visualizing with Advanced Charts - Social Media - Email Marketing - User Experience - Digital Strategy - Campaign Management - Lead Generation}
 }
+
 
 % 工作经历
 \CN{ \section{工作经历} }
@@ -151,6 +157,7 @@
     \item Managed and optimized PPC campaigns, resulting in a 5\% increase in click-through rates
     \end{itemize}}}
 }
+
 
 % 在线课程&证书
 \CN{\section{在线课程\&证书}}
@@ -198,7 +205,6 @@ Career Essentials in Digital Marketing by LinkedIn (Aug. 2022)
 \end{itemize}}
 }
 
-
 \CN{
 \customcventry{09/2018 - 06/2022}
 {{拉斯维加斯大学}}
@@ -214,6 +220,7 @@ Career Essentials in Digital Marketing by LinkedIn (Aug. 2022)
 \item {Relevant Courses: } Software and Hardware, Data Visualization, Business Intelligence.
 \end{itemize}}
 }
+
 
 % 专业技能
 \CN{\section{专业技能}}
@@ -238,6 +245,7 @@ Career Essentials in Digital Marketing by LinkedIn (Aug. 2022)
     }
 }
 \end{itemize}}
+
 
 % 语言
 \CN{\section{语言}}
