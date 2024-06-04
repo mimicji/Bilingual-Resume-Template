@@ -8,11 +8,8 @@
 ## 英文简历样本
 ![英文简历](https://github.com/mimicji/Bilingual-Resume-Template/releases/download/1.0/Resume_Template_EN.jpg)
 
-## 使用方法-Overleaf
-访问[Overleaf模板](https://www.overleaf.com/latex/templates/bilingual-resume-template-zhong-ying-shuang-yu-jian-li-biao-zhun-mo-ban/spdcptnmcdwq)页面。
-
-## 使用方法-Build By Yourself
-- 使用XeLaTeX编译
+## 使用方法
+- 通过[Overleaf模板](https://www.overleaf.com/latex/templates/bilingual-resume-template-zhong-ying-shuang-yu-jian-li-biao-zhun-mo-ban/spdcptnmcdwq)页面使用,或自行使用XeLaTeX编译
 - 仅需修改main.tex文件
 - 自main.tex文件的第50行起，开始你的简历撰写。`\CN{}`中填写中文信息，`\EN{}`中填写英文信息。
 - 导出中文简历时，确保第11行未被注释
